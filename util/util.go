@@ -7,7 +7,7 @@ import (
 	"strconv"
 )
 
-func readInput(file_name string) []int {
+func ReadInputInt(file_name string) []int {
 	file, err := os.Open(file_name)
  
 	if err != nil {
@@ -27,4 +27,24 @@ func readInput(file_name string) []int {
 	file.Close()
  
 	return intlines 
+}
+
+func ReadInputString(file_name string) []string{
+	file, err := os.Open(file_name)
+ 
+	if err != nil {
+		log.Fatalf("failed opening file: %s", err)
+	}
+ 
+	scanner := bufio.NewScanner(file)
+	scanner.Split(bufio.ScanLines)
+	
+	var txtlines []string
+
+	for scanner.Scan() {
+		text := scanner.Text()
+		txtlines = append(txtlines, text)
+	}
+	file.Close()
+	return txtlines
 }
