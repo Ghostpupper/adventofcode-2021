@@ -1,4 +1,4 @@
-package get_input
+package util
 
 import (
 	"bufio"
