@@ -7,7 +7,7 @@ import (
 	"strconv"
 )
 
-func read_input(file_name string) []int {
+func readInput(file_name string) []int {
 	file, err := os.Open(file_name)
  
 	if err != nil {

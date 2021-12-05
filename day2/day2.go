@@ -7,7 +7,7 @@ import (
 
 
 func main() {
-	text := util.read_input("dummy.txt")
+	text := util.readInput("dummy.txt")
 	fmt.Println(text)
 }
 	
