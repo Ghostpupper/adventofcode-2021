@@ -32,14 +32,14 @@ func partOne(textlines []string) {
 func move_forward(value int){
 	position_x += value
 }
-
-func move_up(value int){
-	position_y -= value
-	if position_y < 0{
-		position_y = 0
-	}
-}
-
-func move_down(value int){
-	position_y += value
-}
+   
+func move_up(value int){   
+	position_y -= value   
+	if position_y < 0{   
+		position_y = 0   
+	}   
+}   
+   
+func move_down(value int){   
+	position_y += value   
+}   
